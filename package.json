@@ -21,5 +21,9 @@
   "bugs": {
     "url": "https://github.com/fazreil/presentation-on-heroku/issues"
   },
-  "homepage": "https://github.com/fazreil/presentation-on-heroku#readme"
+  "homepage": "https://github.com/fazreil/presentation-on-heroku#readme",
+  "dependencies": {
+    "mdx-deck": "^4.1.1",
+    "nomnoml": "^0.8.0"
+  }
 }
