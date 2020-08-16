@@ -1,12 +1,14 @@
 # This is a basic workflow to help you get started with Actions
 
-name: CI
+name: Deploy to Heroku
 
 # Controls when the action will run. Triggers the workflow on push or pull request
 # events but only for the master branch
 on:
   push:
-    branches: [ master ]
+    branches:
+      - master
+      - deploy-on-heroku
   pull_request:
     branches: [ master ]
 
@@ -21,6 +23,13 @@ jobs:
     steps:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
+    - uses: akhileshns/heroku-deploy@v3.4.6 # This is the action
+      with:
+        heroku_api_key: ${{secrets.HEROKU_API_KEY}}
+        heroku_app_name: "YOUR APP's NAME" #Must be unique in Heroku
+        heroku_email: "YOUR EMAIL"
+        usedocker: false
+        procfile: "web: npm start"
 
     # Runs a single command using the runners shell
     - name: Run a one-line script
