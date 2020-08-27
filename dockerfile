@@ -10,6 +10,6 @@ COPY package.json .
 
 RUN npm install
 
-EXPOSE 80
+EXPOSE $PORT
 
 CMD npm start
