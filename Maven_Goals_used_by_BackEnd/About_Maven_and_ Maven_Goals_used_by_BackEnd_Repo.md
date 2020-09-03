@@ -94,4 +94,23 @@ Maven clean goal is bounded by the clean phase in the lifecycle. It deletes the 
 In this approach we will do documentation for every scripts. This approach is important as a good documentation will being able to provide a clear summary on the function of each scripts.
 
 **Relate apprach with Maven Lifecycles used by Back End**
+<br>
 As we know Maven provide an automation process for documentation, and both the Build and Clean Lifecycles helpful in its well-defined sequence of phases that allow goals can be achieved easily as well as clean up the dependencies that hooked up memory. Thus, I would like to adopt the same lifecycle for documentation purpose.
+
+
+## **References**
+1. Baeldung. (2019, April 07). Maven Goals and Phases. Retrieved September 02, 2020, from https://www.baeldung.com/maven-goals-phases
+<br>
+<br>
+2. Justin Albano CORE ·, Albano, J., 02, D., Like (16) Comment (0), &amp; Like (16) Comment (0). (2019, December 02). Building Java Applications With Maven - DZone Java. Retrieved September 02, 2020, from https://dzone.com/articles/building-java-applications-with-maven
+<br>
+<br>
+3. Maven - Build Life Cycle. (n.d.). Retrieved September 02, 2020, from https://www.tutorialspoint.com/maven/maven_build_life_cycle.htm
+<br>
+<br>
+4. Maven Tutorial. (n.d.). Retrieved September 03, 2020, from https://www.tutorialspoint.com/maven/index.htm
+<br>
+<br>
+5. Porter, B. (n.d.). Introduction to the Build Lifecycle. Retrieved September 02, 2020, from https://maven.apache.org/guides/introduction/introduction-to-the-lifecycle.html
+<br>
+<br>
