@@ -128,7 +128,7 @@ Maven is a plugin execution framework at where all the tasks are done through pl
 ### **Common Plugins for Documentation**
 
 |Plugins|Description|
-|-||
+|--|--|
 |Site|Main plugin for all site document creation|
 |Project Info Report|Collate and produce the common site reporting docs for the artifact|
 |Checkstyle|Provide static analysis for source files.|
