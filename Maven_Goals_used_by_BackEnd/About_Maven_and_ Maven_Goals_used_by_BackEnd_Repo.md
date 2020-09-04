@@ -1,5 +1,8 @@
 # **Apache Maven**
+
 Apache Maven is a comprehension and project management software tool. Based on a project object model (POM) framework, Maven is able to handle the create, report and documentation of a project from an information center. We can create and manage any Java-based project through maven.
+
+![Maven and its Features](https://www.sevenmentor.com/wp-content/uploads/2019/12/Maven-Architecture-Training-in-Pune.jpg)
 
 Maven provide build lifecycle framework with automation on project's build infrastructure within second as it uses a standard directory layout and a default build lifecycle.
 
@@ -20,6 +23,8 @@ In short, Maven simplifies and standardizes the project build process. It handle
 ## **Project Object Model**
 Project Object Model (POM) is a fundamental work unit of Maven, it is an XML file that resides in the base directory  of a project (pom.xml). POM contains the information of a project and various configurations details used by Maven to build the project.
 
+![Maven POM](https://cdn.educba.com/academy/wp-content/uploads/2020/04/Maven-POM-File-1.2.jpg)
+
 Aside of that, POM also consist goals and plugins for a project. Maven looks into the POM of respective directory when executing a task or goal. By reading POM, Maven able to get the configuration information before execution take place. Configurations that specified in POM are as below:
 - Project Dependencies
 - Plugins
@@ -36,11 +41,13 @@ Maven following 3 standard lifecycle, which are:
 - build
 - Site
 
-The lifecycle used for Back End build and test codes, the Clean and Build lifecycle are adopted.
+For the **lifecycle used for Back End** build and test codes, **Clean** and **Build lifecycle** are adopted.
 
 
 ### **Maven Typical Build Lifecycle**
 A Typical Build Lifecycle is a well-defined sequence of phases which define the order in which the goals are to be executed. A typical Maven Build Lifecycle is as table below:
+
+![Maven Build Lifecycle](https://www.studytonight.com/maven/images/site-lifecycle.jpg)
 
 |Phase|Handles|Description|
 |--|--|--|
@@ -89,26 +96,72 @@ Maven Cleaan Lifecycle consists of:
 
 Maven clean goal is bounded by the clean phase in the lifecycle. It deletes the output of a build by deleting a built directory.
 
+### **Maven Site Lifecycle**
+Maven Site plugin was purposely designed for documentation, for example create reports, deploy site, and etc. It having 4 phases as below:
+- Pre-site
+- Site
+- Post-Site
+- Site-Deploy
 
-### **Documentation for Codes**
-In this approach we will do documentation for every scripts. This approach is important as a good documentation will being able to provide a clear summary on the function of each scripts.
+### **Maven Plugin**
+Maven is a plugin execution framework at where all the tasks are done through plugins. Maven plugins are use for:
+- create jar file
+- create war file
+- compile code files
+- unit testing of code
+- create project documentation
+- create project reports
+
+![](https://raw.githubusercontent.com/codspire/artifact-lookup-maven-plugin/master/src/main/resources/artifact-lookup-maven-plugin-info.png)
+
+**Plugin Types**
+
+|Sr. No.|Type & Description|
+|--||
+|1|**Build plugins** - They execute during the build process and should be configured in the <build/> element of pom.xml.|
+|2|**Reporting plugins** - They execute during the site generation process and they should be configured in the <reporting/> element of the pom.xml.|
+
+<br>
+
+### **Common Plugins for Documentation**
+
+|Plugins|Description|
+|-||
+|Site|Main plugin for all site document creation|
+|Project Info Report|Collate and produce the common site reporting docs for the artifact|
+|Checkstyle|Provide static analysis for source files.|
+|FindBugs|Provide static analysis for source files.|
+|Cobertura|Provide code coverage during test phase.|
+|PMD|Provide static analysis and code duplication.|
+|JavaDoc|Bundles JavaDoc into reporting structure|
+|JXR|Build crosslink information for classes. <br> <br>  _Configuration can be used by all the plugins listed in this table_|
+
+
+### **Documentation for Back End Codes**
+Documentation for codes also can be understood as provide a summary about Back End code's function. It's crucial to carry out the documentation so the developers can save time from reading all the lines of the script just for understand the script function. With the help of Maven, we will be able to deliver out the summary for all the Back End scripts and help people to understand the scripts function within second.
 
 **Relate apprach with Maven Lifecycles used by Back End**
 <br>
-As we know Maven provide an automation process for documentation, and both the Build and Clean Lifecycles helpful in its well-defined sequence of phases that allow goals can be achieved easily as well as clean up the dependencies that hooked up memory. Thus, I would like to adopt the same lifecycle for documentation purpose.
+As we know Maven provide an automation process for project with its lifecycles. By refer to our goal which is to achieve automation for documentation, clearly we can say that Site lifecycle will be most suitable to be adopted with some plugins for documentation (vary according to needs).
 
 
 ## **References**
 1. Baeldung. (2019, April 07). Maven Goals and Phases. Retrieved September 02, 2020, from https://www.baeldung.com/maven-goals-phases
 <br>
 <br>
-2. Justin Albano CORE ·, Albano, J., 02, D., Like (16) Comment (0), &amp; Like (16) Comment (0). (2019, December 02). Building Java Applications With Maven - DZone Java. Retrieved September 02, 2020, from https://dzone.com/articles/building-java-applications-with-maven
+2. Justin Albano (2019, December 02). Building Java Applications With Maven - DZone Java. Retrieved September 02, 2020, from https://dzone.com/articles/building-java-applications-with-maven
 <br>
 <br>
 3. Maven - Build Life Cycle. (n.d.). Retrieved September 02, 2020, from https://www.tutorialspoint.com/maven/maven_build_life_cycle.htm
 <br>
 <br>
+7. Maven - Plugins. (n.d.). Retrieved September 04, 2020, from https://www.tutorialspoint.com/maven/maven_plugins.htm
+<br>
+<br>
 4. Maven Tutorial. (n.d.). Retrieved September 03, 2020, from https://www.tutorialspoint.com/maven/index.htm
+<br>
+<br>
+6. Mike Ensor (2012, March 23). Basic Site Documentation: Maven 3 - DZone Java. Retrieved September 04, 2020, from https://dzone.com/articles/basic-site-documentation-maven
 <br>
 <br>
 5. Porter, B. (n.d.). Introduction to the Build Lifecycle. Retrieved September 02, 2020, from https://maven.apache.org/guides/introduction/introduction-to-the-lifecycle.html
