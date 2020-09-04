@@ -43,6 +43,7 @@ Maven following 3 standard lifecycle, which are:
 
 For the **lifecycle used for Back End** build and test codes, **Clean** and **Build lifecycle** are adopted.
 
+<br>
 
 ### **Maven Typical Build Lifecycle**
 A Typical Build Lifecycle is a well-defined sequence of phases which define the order in which the goals are to be executed. A typical Maven Build Lifecycle is as table below:
@@ -59,6 +60,7 @@ A Typical Build Lifecycle is a well-defined sequence of phases which define the 
 |**Install**|Installation|This phase installs the package in local/remote maven repository.|
 |**Deploy**|Deploying|Copies the final package to the remote repository.|
 
+<br>
 
 ### **Maven Build (Default) Lifecycle**
 Default lifecycle is the primary lifecycle of Maven and is used to build application. Its phases are as below:
@@ -117,7 +119,7 @@ Maven is a plugin execution framework at where all the tasks are done through pl
 **Plugin Types**
 
 |Sr. No.|Type & Description|
-|--||
+|--|--|
 |1|**Build plugins** - They execute during the build process and should be configured in the <build/> element of pom.xml.|
 |2|**Reporting plugins** - They execute during the site generation process and they should be configured in the <reporting/> element of the pom.xml.|
 
