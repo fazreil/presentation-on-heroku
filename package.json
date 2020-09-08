@@ -4,7 +4,8 @@
   "description": "A presentation project hosted in Heroku",
   "main": "index.js",
   "scripts": {
-    "start": "mdx-deck deck.mdx",
+    "start": "mdx-deck deck.mdx -p $PORT -h 0.0.0.0",
+    "heroku-postbuild": "mdx-deck deck.mdx -p $PORT -h 0.0.0.0",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
