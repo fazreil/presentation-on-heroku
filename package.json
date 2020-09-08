@@ -28,6 +28,7 @@
   "dependencies": {
     "@mdx-deck/themes": "^4.1.0",
     "mdx-deck": "^4.1.1",
-    "nomnoml": "^0.8.0"
+    "nomnoml": "0.6.1"
+    "fs": "0.0.1-security",
   }
 }
