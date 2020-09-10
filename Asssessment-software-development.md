@@ -225,11 +225,126 @@ It is used for testing purposes and important for ensuring that potential vulner
 
 
 + real time program performance & status
-+ configuation options to match your workflow
++ configuration options to match your work flow
 +auto save
 
-Method to asess software development tool secuirty
-- NIST secuirity model
-- NICE cybersecurity framework (NICE Framework)
+## **Method to asess software development tool security**
+1. **NIST security model**
+
+It is a set of standards to be followed for private organizations to be better equipped to recognize, track and respond to cyber-attacks. The core structure describes the actions you need to take to achieve various outcomes on cybersecurity
+
+![NIST security model](https://corcystems.com/wp-content/uploads/2020/03/NIST-mmg.png)
+
+
+**Framework**
+
+- Identify
+
+The Identify feature helps build an organizational understanding for the management of cybersecurity risk to systems, individuals, assets, data and capabilities.
+
+**E.g.** Identifying asset vulnerabilities, threats to internal and external organizational resources, and risk response activities as a basis for the organizations Risk Assessment.
+
+- Protect
+It is to ensure to ensure delivery of critical infrastructure services and upports the ability to limit or contain the impact of a potential cybersecurity event.
+
+**E.g.** Protections for Identity Management and Access Control within the organization including physical and remote access.
+
+- Detect
+
+It defines the appropriate activities to identify the occurrence of a cybersecurity event and discover any suspicious event from time to time.
+
+**E.g.** Maintaining Detection Processes to provide awareness of anomalous events.
+
+- Respond
+
+It includes appropriate activities to take action regarding a detected cybersecurity incident and supports the ability to mitigate the possible impact of a cybersecurity incident.
+
+**E.g.** Analysis is conducted to ensure effective response and support recovery activities including forensic analysis, and determining the impact of incidents.
+
+- Recover
+
+Dentifies relevant measures for managing recovery plans and restoring any capabilities or services
+that may have been affected as a result of a cyber security incident. It supports effective recovery from regular operations to reduce the effects of an incident with cybersecurity.
+
+**E.g.** Ensuring the organization implements Recovery Planning processes and procedures to restore systems and/or assets affected by cybersecurity incidents.
+
+2. **NICE cybersecurity framework (NICE Framework)**
+
+It is a resource from which organisations or sectors can create additional publications or resources that fulfil their needs to identify or provide guidance on various aspects of workforce development, planning, learning, and coaching.
+
+![NICE framework](https://schoolofcybersecurity.com/wp-content/uploads/2018/04/Framework_courses-4.png)
+
+**Framework**
+
+- Analyze
+ - Exploitation Analysis
+ - Threat Analysis
+ - All-Source Analysis (multiple sources, agencies)
+
+
+- Collect and Operate
+  - Collection Operations
+  - Cyber Operational Planning
+  - Cyber Operations
+
+
+- Investigate
+  - Cyber Investigation
+  - Digital Forensics
+
+
+- Operate and Maintaining
+  - Data Administration
+  - Network Services
+  - Systems Administration
+  - Systems Analysis
+
+
+- Oversee and Govern
+  - Cybersecurity Management
+  - Strategic Planning and Policy
+  - Cybersecurity Management
+  - Program/Project Management and Acquisition
+
+
+- Protect and Defend
+  - Cyber Defense Analysis
+  - Cyber Defense Infrastructure Support
+  - Incident Response
+  - Vulnerability Assessment and Management
+
+
+-  Securely Provision
+  - Risk Management
+  - Systems Requirements Planning
+  - Technology R&D
+  - Test and Evaluation
+
 -SATS tool
--SAST vs DASTs
+3. **SAST vs DAST**
+
+**SATS**
+
+- It using white-hat testing methods, which they need access to source code to operate. SAST tools help software developers and security professionals analyze an application’s underlying source code for flaws and vulnerabilities.
+
+- White-hat, or white-box, testing requires users to possess information related to code and security architecture to examine non-compiled code.
+
+- This tool is notorious for flagging safe code  (false positives) because they don't execute the code.
+
+- However, it still extremely acclaimed in detecting problems early on in the life
+cycle of software development, such as numerical errors, race hazards.
+
+**DAST**
+
+- Using black-box testing which perform testing from outside a functioning application, rather than on its source code.
+
+- This method gives security professionals and developers a third-party perspective of threats, viewing an app much like a hacker outside the organization would.
+
+| SAST | DAST|
+|-------------------|------------------|
+|White box security testing <br>- Tester has access the underlying framework <br>- Application tested from inside out <br>- testing represent developer approach| Black box security testing<br> - Tester has no knowledge of the framework or technologies -tested from outside in -testing represent hacker approach|
+| Requires source code <br> -analyze source code or binary without executing the applications| Requires a running application<br> -  analyze by executing the applications |
+|Find vulnerabilities earlier in SDLC |Find vulnerabilities toward the end of SDLC|
+|Less expensive to solve the vulnerabilities<br> - problem can be solve before code enter to QA cycle| More expensive to solve the vulnerabilities <br> -problem may be fixed as emergency release|
+|can't discover run-time and environment-related issues <br> scans static code| Can discover run-time and environment-related issues<br> -using dynamic analysis|
+|Support all kinds of software | Typically scan only application like web services and web application|
