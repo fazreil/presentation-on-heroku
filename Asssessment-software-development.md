@@ -245,7 +245,8 @@ The Identify feature helps build an organizational understanding for the managem
 **E.g.** Identifying asset vulnerabilities, threats to internal and external organizational resources, and risk response activities as a basis for the organizations Risk Assessment.
 
 - Protect
-It is to ensure to ensure delivery of critical infrastructure services and upports the ability to limit or contain the impact of a potential cybersecurity event.
+
+It is to ensure to ensure delivery of critical infrastructure services and supports the ability to limit or contain the impact of a potential cybersecurity event.
 
 **E.g.** Protections for Identity Management and Access Control within the organization including physical and remote access.
 
@@ -348,3 +349,19 @@ cycle of software development, such as numerical errors, race hazards.
 |Less expensive to solve the vulnerabilities<br> - problem can be solve before code enter to QA cycle| More expensive to solve the vulnerabilities <br> -problem may be fixed as emergency release|
 |can't discover run-time and environment-related issues <br> scans static code| Can discover run-time and environment-related issues<br> -using dynamic analysis|
 |Support all kinds of software | Typically scan only application like web services and web application|
+
+
+
+# **Why NIST framework**
+
+By implementing all the steps in NIST framework
+
+- organizations are able to understand their cybebrsecurity risks (threats, vulnerabilities and impacts)
+- reduce the risks with customized measures
+- The Framework helps them respond to and recover from cybersecurity incidents, prompting them to analyze root causes and consider how they can make improvements
+- all the events or defined risks and solutions are stated clearly by the team
+- In identify stage, before select a tool , team will know all the threats or vulnerability from internal to external that may harm to the project. So, emergency release will be decrease.
+- All the risk can be limit by authorized different type of access to different type of users. By enabling all users have their own and unique account.
+- Leader or Administrator always keep an eye on the progress will increase the level of security instead of depending on the system to detect which some errors might not be detected.
+- In respond stage, a respond is important to involve for solving the problem as fast as possible. This is to avoid any other attacker interrupt the system or data during the downtime.
+- Always backup all the data by following the guideline that have identified to ensure the confidentiality of data.
