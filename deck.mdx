@@ -1,6 +1,7 @@
 import { Split } from 'mdx-deck';
-//import { themes } from 'mdx-deck';
-//export const theme = themes.future;
+import { themes } from 'mdx-deck';
+export const theme = themes.yellow;
+import tmm  from './TMM.png';
 
 # DevSecOps
 ### University Internship Program under SRE Chapter
@@ -9,11 +10,95 @@ import { Split } from 'mdx-deck';
 
 # Methodology
 
-- Risk Assessment
- 
-- Test Maturity Model
+## Risk Assessment
+
+![Risk Assessment Flow](https://lh3.googleusercontent.com/proxy/-dRYC1JqQD5PNCq9EpWzv82Eavah8TrCjZcyyFsI0uJbyJdMtASSBWbex1bGFjyLA5UR6WGYJpB9xWNEuXk8waeGHQ)
+
+---
+
+## Test Maturity Model
+
+<img src={ tmm } />
+
+---
+## Capability Maturity Model
+
+![CMM](https://www.slideteam.net/media/catalog/product/cache/960x720/c/a/capability_maturity_model_Slide01.jpg)
+
+---
 
 - Hardening
+
+Protecting a system by which its vulnerability surface, which is stronger as a system perform more functions.
+
+ - Server Hardening
+ - Application Hardening
+ - Database Hardening
+---
+
+# **Hardening**
+
+- a collection of tools and techniques to reduce vulnerability in the infrastructure or the systems unlike test maturity model is emphasizing on the automation process
+- provides different protection layers
+  - host level
+  - application level
+  - operating system level
+  - user level to physical level.
+
+---
+
+# **Criteria to assess security aspect of software development tools**
+
+|Criteria | Description|
+|---------------|----------------|
+|Vulnerability|Any weakness in the system may damage the assets of the organizations|
+|Data Leak Threat|- Human error <br/>- Machine error|
+|Audit Logging|- All the activities should be recorded in details<br/>- Easier for analyst to review for any weakness|
+|Identity and Access Management|Provide the right access, for the right people, at the right time|
+|Security integrate with SDLC|Involve all the security measurement during the SDLC|
+|Storage method|- Advanced Firewalls<br/>- Event Logging<br/>- Encryption|
+|Attack Pattern|Identify and ensure the vulnerability can be prevented|
+|Automate routine tasks|Implement automation to avoid human error|
+
+---
+
+# Methodology
+
+**Methodology to assess software development tool security are such as below:**
+- **NIST framework**
+- **NICE framework**
+- **SAST vs DAST**
+
+---
+
+## NIST framework
+
+![NIST framework](https://corcystems.com/wp-content/uploads/2020/03/NIST-mmg.png)
+
+---
+
+## NICE framework
+
+![NICE framework](https://schoolofcybersecurity.com/wp-content/uploads/2018/04/Framework_courses-4.png)
+
+---
+
+## SAST vs DAST
+
+| SAST | DAST|
+|-------------------|------------------|
+|White box security testing <br/>- Tester has access the underlying framework <br/>- Application tested from inside out <br/>- testing represent developer approach| Black box security testing<br/>- Tester has no knowledge of the framework or technologies <br/>-tested from outside in <br/>-testing represent hacker approach|
+
+---
+
+|SAST |DAST|
+|-------------------|------------------------------|
+| Requires source code  -analyze source code or binary without executing the applications| Requires a running application -  analyze by executing the applications |
+|Find vulnerabilities earlier in SDLC |Find vulnerabilities toward the end of SDLC|
+|Less expensive to solve the vulnerabilities- problem can be solve before code enter to QA cycle| More expensive to solve the vulnerabilities -problem may be fixed as emergency release|
+|can't discover run-time and environment-related issues scans static code| Can discover run-time and environment-related issues -using dynamic analysis|
+|Support all kinds of software | Typically scan only application like web services and web application|
+
 
 ---
 
