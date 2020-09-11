@@ -2,25 +2,35 @@ import { Split } from 'mdx-deck';
 //import { themes } from 'mdx-deck';
 //export const theme = themes.future;
 
-# **Apache Maven**
+# Apache Maven
 
 - Apache Maven is a comprehension and project management software tool.
-- Based on a project object model (POM) framework,
-- Maven is able to handle the create,
-- report and documentation of a project from an information center.
+- Based on a project object model (POM) framework Maven is able to handle the create, report and documentation of a project from an information center.
+- We can create and manage any Java-based project through maven.
 
 ---
-
-We can create and manage any Java-based project through maven.
-
----
-
 
 ![Maven and its Features](https://www.sevenmentor.com/wp-content/uploads/2019/12/Maven-Architecture-Training-in-Pune.jpg)
 
 ---
 
-**Scope provided by Maven for developers to manage**
+# Maven Features
+
+|**Features**|**Description**|
+|--|--|
+|Easier build process||
+|Quality project information||
+|Transparent migration to new features||
+|Best practices development guideline||
+|Uniform build system||
+todo: description to be filled by Aaron
+
+---
+
+
+# Scope
+These are the scopes provided by Maven for developers to manage
+
 - Build
 - Documentation
 - Reporting
@@ -32,8 +42,9 @@ We can create and manage any Java-based project through maven.
 
 ---
 
-# **Maven Goals used by Back End Repositories**
-Maven following 3 standard lifecycle, which are:
+# Maven Goals
+
+These are maven goals used by Back End Repositories:
 - Clean
 - build
 - Site
@@ -42,13 +53,15 @@ Maven following 3 standard lifecycle, which are:
 
 ---
 
-# **Maven Typical Build Lifecycle**
+# Maven Typical Build Lifecycle
+A Typical Build Lifecycle is a well-defined sequence of phases which define the order in which the goals are to be executed. A typical Maven Build Lifecycle is as table below:
+
+---
 
 ![Maven Build Lifecycle](https://www.studytonight.com/maven/images/site-lifecycle.jpg)
 
 ---
-
-A Typical Build Lifecycle is a well-defined sequence of phases which define the order in which the goals are to be executed. A typical Maven Build Lifecycle is as table below:
+## Maven Typical Build Lifecycle
 
 |Phase|Handles|Description|
 |--|--|--|
@@ -62,36 +75,43 @@ A Typical Build Lifecycle is a well-defined sequence of phases which define the 
 
 ---
 
-### **Maven Build (Default) Lifecycle**
+### Maven Build (Default) Lifecycle
 Default lifecycle is the primary lifecycle of Maven and is used to build application. Its phases are as below:
 
-|Sr.No.|Lifecycle Phase & Description|
-|--|--|
-|1|**Validate** - Validates whether project is correct and all necessary information is available to complete the build process.|
-|2|**Initialize** - Initializes build state, for example set properties.|
-|3|**Generate-Sources** - Generate any source code to be included in compilation phase.|
-|4|**Process-Sources** - Process the source code, for example, filter any value.|
-|5|**Generate-Resources** - Generate resources to be included in the package.|
-|6|**Process-Resources** - Copy and process the resources into the destination directory, ready for packaging phase.|
-|7|**Compile** - Compile the source code of the project.|
+|**No.**|**Lifecycle Phase** | **Description**|
+|--|--|--|
+|1|**Validate** | Validates whether project is correct and all necessary information is available to complete the build process.|
+|2|**Initialize** | Initializes build state, for example set properties.|
+|3|**Generate-Sources** | Generate any source code to be included in compilation phase.|
+|4|**Process-Sources** | Process the source code, for example, filter any value.|
+|5|**Generate-Resources** | Generate resources to be included in the package.|
+|6|**Process-Resources** | Copy and process the resources into the destination directory, ready for packaging phase.|
+|7|**Compile** | Compile the source code of the project.|
 
 ---
-|||
-|--|--|
-|8|**Process-Classes** - Post-process the generated files from compilation, for example to do bytecode enhancement/optimization on Java classes.|
-|9|**Generate-Test-Sources** - Generate any test source code to be included in compilation phase.|
-|10|**Process-Test-Sources** - Process the test source code, for example, filter any values.|
-|11|**Test-Compile** - Compile the test source code into the test destination directory.|
-|12|**Process-Test-Classes** - Process the generated files from test code file compilation.|
-|13|**Test** - Run tests using a suitable unit testing framework (Junit is one).|
-|14|**Prepare-Package** - Perform any operations necessary to prepare a package before the actual packaging.|
-|15|**Package** - Take the compiled code and package it in its distributable format, such as a JAR, WAR, or EAR file.|
-|16|**Pre-Integration-Test** - Perform actions required before integration tests are executed. For example, setting up the required environment.|
-|17|**Integration-Test** - Process and deploy the package if necessary into an environment where integration tests can be run.|
-|18|**Post-Integration-Test** - Perform actions required after integration tests have been executed. For example, cleaning up the environment.|
-|19|**Verify** - Run any check-ups to verify the package is valid and meets quality criteria.|
-|20|**Install** - Install the package into the local repository, which can be used as a dependency in other projects locally.|
-|21|**Deploy** - Copies the final package to the remote repository for sharing with other developers and projects.|
+### Maven Build (Default) Lifecycle (*cont.*)
+
+|**No.**|**Lifecycle Phase** | **Description**|
+|--|--|--|
+|8|**Process-Classes** | Post-process the generated files from compilation, for example to do bytecode enhancement/optimization on Java classes.|
+|9|**Generate-Test-Sources** | Generate any test source code to be included in compilation phase.|
+|10|**Process-Test-Sources** | Process the test source code, for example, filter any values.|
+|11|**Test-Compile** | Compile the test source code into the test destination directory.|
+|12|**Process-Test-Classes** | Process the generated files from test code file compilation.|
+|13|**Test** | Run tests using a suitable unit testing framework (Junit is one).|
+|14|**Prepare-Package** | Perform any operations necessary to prepare a package before the actual packaging.|
 
 ---
+### Maven Build (Default) Lifecycle (*cont.*)
 
+|**No.**|**Lifecycle Phase** | **Description**|
+|--|--|--|
+|15|**Package** | Take the compiled code and package it in its distributable format, such as a JAR, WAR, or EAR file.|
+|16|**Pre-Integration-Test** | Perform actions required before integration tests are executed. For example, setting up the required environment.|
+|17|**Integration-Test** | Process and deploy the package if necessary into an environment where integration tests can be run.|
+|18|**Post-Integration-Test** | Perform actions required after integration tests have been executed. For example, cleaning up the environment.|
+|19|**Verify** | Run any check-ups to verify the package is valid and meets quality criteria.|
+|20|**Install** | Install the package into the local repository, which can be used as a dependency in other projects locally.|
+|21|**Deploy** | Copies the final package to the remote repository for sharing with other developers and projects.|
+
+---
