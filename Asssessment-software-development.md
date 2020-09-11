@@ -192,7 +192,7 @@ The services that used to stored the data should protect it from cyber attack an
 - A record of network actions.
 - For analysts to predict and prevent security breaches.
 
-:point_right: ** Encryption**
+:point_right: **Encryption**
 
 - keeps data safe from unauthorized users.
 - Access is denied without finding a secret key by an unauthorized users
@@ -220,6 +220,12 @@ It is used for testing purposes and important for ensuring that potential vulner
 -References
 
 8. **Automate routine tasks**
+
+:question: Does the tools able to perform/ assign task automatically?
+
+Automation will free up your mental energy and resources to work on important things.
+You should imagine impactful ways you should enhance your product , service or customer experience, instead of worrying about how to respond to a query. For instant, auto generate reply messages or assign task automatically.
+
 9. **Application of system and network security**
 10. **Validation** (reject blacklist)
 
