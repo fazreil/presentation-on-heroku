@@ -1,13 +1,13 @@
 # **7 Criteria to assess security aspect of software development tools**
 
-1. **Vulnerabilities**
+## 1. **Vulnerabilities**
 
 
 :question:Does the tools being detected in Vulnerabilities?
 
 :radio_button: A vulnerability is any mistakes or weakness in the system security procedures, design, implementation or any internal control that may result in the violation of the system's security policy.
 
-#### **Possible Vulnerabilities**
+**Possible Vulnerabilities**
 
 :point_right:**SQL Injection**
 
@@ -23,7 +23,8 @@ into a command handled under the shell interpreter command.
 :point_right: **Buffer Overflow**
 
 - This vulnerability occurs when a program tries to add more data in the buffer which the storage capacity is limited. Writing outside of a block of owed memory can crash the program, corrupt data, and even cause the execution of malicious code.
-2. **Data Leak Threat**
+
+## 2. **Data Leak Threat**
 
 :question: Does the data leak by anyone in the organization?
 
@@ -45,7 +46,8 @@ All the file transfer or accessing external sources will take place on the inter
 This may causes unknown file which contain malicious code from the internet damage or attack the computer or network
 
 **E.g:** Malware, Phishing attacks
-3. **Audit logging**
+
+## 3. **Audit logging**
 
 :question: Does all the events and changes recorded ?
 
@@ -82,7 +84,7 @@ Audit log capture events by recording who performed an activity, what activity w
 |Action | how the object has been altered|
 |Action Type|create, read, update, or delete |
 
-4. **Identity and Access Management**
+## 4. **Identity and Access Management**
 
 :question: Does the system provide right access, for the right people, at the right time?
 
@@ -100,7 +102,7 @@ By implementing this, it is much easier to manage provisioning while ensuring co
 - User repository Management (used to track users with access)
 -Security Analytics for auditing and compliance
 
-5. **Security integration with SDLC**
+## 5. **Security integration with SDLC**
 
 :question: Does the security aspect included during implemetation of SDLC?
 
@@ -166,8 +168,7 @@ Implementing maintenance plan to provide customers after service help. Integrati
 |Security Escalation | In-house Security Escalation Reproduction, Risk Evaluation and Testing of concerned fix|
 |3rd Party Library Updates | Tracking, Risk Assessment and Testing of 3rd party Library Security Updates|
 
-
-6. **Storage method** (cloud-service provider/database)
+## 6. **Storage method** (cloud-service provider/database)
 
 :question: Does the data being stored in a secure service/ application?
 
@@ -202,31 +203,31 @@ The services that used to stored the data should protect it from cyber attack an
 - Password login, fingerprint locks
 
 
-7. **Attack Pattern**
+## 7. **Attack Pattern**
 
 It is used for testing purposes and important for ensuring that potential vulnerabilities are prevented. The attack patterns themselves can be used to highlight areas which need to be considered for security hardening in a software application.
 
 ### **Typical information should be captured:**
 - Pattern name and classification
 - Attack prerequisites
--Description
--Targeted vulnerabilities or weaknesses
--Method of attack
--Attacker goal
--Attacker skill level required
--Resources required
--Blocking solutions
--Context description
--References
+- Description
+- Targeted vulnerabilities or weaknesses
+- Method of attack
+- Attacker goal
+- Attacker skill level required
+- Resources required
+- Blocking solutions
+- Context description
+- References
 
-8. **Automate routine tasks**
-9. **Application of system and network security**
-10. **Validation** (reject blacklist)
+    - **Automate routine tasks**
+    - **Application of system and network security**
+    - **Validation** (reject blacklist)
 
 
 + real time program performance & status
 + configuration options to match your work flow
-+auto save
++a uto save
 
 ## **Method to asess software development tool security**
 1. **NIST security model**
@@ -324,7 +325,7 @@ It is a resource from which organisations or sectors can create additional publi
 -SATS tool
 3. **SAST vs DAST**
 
-**SATS**
+**SAST**
 
 - It using white-hat testing methods, which they need access to source code to operate. SAST tools help software developers and security professionals analyze an application’s underlying source code for flaws and vulnerabilities.
 
