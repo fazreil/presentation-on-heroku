@@ -74,7 +74,7 @@
 - Dynamic depth for infrastructure
 -  Stored Secrets
 
-## **Security DevOps Maturity Model (SDOMM)**
+## **Security DevOps Maturity Model (SDOMM)** [id]: https://christian-schneider.net/slides/OWASP-AppSecEU-2015_SecDevOps.pdf "SDOMM"
 
 - This model define steps in reaching more automation to check security aspects.
 - To define a roadmap of how projects to achieve certain level of automation to check security aspects during the CI (Continuous Integration) build chain.
