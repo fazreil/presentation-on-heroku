@@ -18,15 +18,15 @@
 1. Code analysis
   - deliver code in small chunks so vulnerabilities can be identified quickly.
 
-3. Change management
+2. Change management
   - increase speed and efficiency by allowing anyone to submit changes, then determine whether the change is good or bad.
-8. Compliance monitoring
+3. Compliance monitoring
   - be ready for an audit at any time (which means being in a constant state of compliance, including gathering evidence of GDPR compliance, PCI compliance, etc.).
-1. Threat investigation
+4. Threat investigation
   - identify potential emerging threats with each code update and be able to respond quickly.
-1. Vulnerability assessment
+5. Vulnerability assessment
   - identify new vulnerabilities with code analysis, then analyze how quickly they are being responded to and patched.
-1. Security training
+6. Security training
   - train software and IT engineers with guidelines for set routines.
 
 **Type of software security testing**
@@ -76,6 +76,8 @@
 
 ## **Security DevOps Maturity Model (SDOMM)** [id]: https://christian-schneider.net/slides/OWASP-AppSecEU-2015_SecDevOps.pdf "SDOMM"
 
+[id]: https://files.speakerdeck.com/presentations/34433ef819d54786b5687b3e7f2bf481/201507_HackPra_Security_DevOps.pdf "SDOMM"
+
 - This model define steps in reaching more automation to check security aspects.
 - To define a roadmap of how projects to achieve certain level of automation to check security aspects during the CI (Continuous Integration) build chain.
 
@@ -97,6 +99,6 @@
 |Axes| Level 1| Level 2| Level 3| Level 4|
 |--------------|---------------|-------------|-----------|------------|
 |Dynamic Depth|Scanning of public attack surface| Scanning of authenticated parts through UI layer |Separate scanning of different application layers / backends| argeted scanning of individual forms / wizards (UI) and service layers|
-|Static Depth|  |   |   |     |
-|Intensity|     |     |       |       |
-|
+|Static Depth| Axis "Static Depth": Level 1Assurance that no third-party code with known vulnerabilities is used<br/> - check server-site and client site dependencies | Axis "Static Depth": Level 2Scan important parts of source code for vulnerability patterns  | Scan the complete applications’ source code for vulnerability patterns  |   Scan code of (important) third-party dependencies used in application  |
+|Intensity|- Dynamic checks: Only passive scanning <br/> -Static checks: Just scan the code along with other code metrics     |   Static checks: Just scan the code along with other code metrics  |   Use heavyweight scanning options on important parts of application    |   Axis "Intensity": Level 4Use customised rule sets for dynamic checks    |
+|Consolidation|-Generate human-readable (HTML) reports from tools and link them in Jenkins<br/>-Use simple criteria to "break the build" on heavy findings      |  Custom logic to make build unstable and/or broken depending on<br/> - type of vulnerability<br/>- Confidence level<br/>- Severity ranking  |  Define consolidation goals     | Measure the concrete code coverage of your security testing activities        |
