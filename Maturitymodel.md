@@ -56,6 +56,8 @@
 - Level 4: Advanced deployment of security practices at scale
 
 **Dimensions**  
+
+
 [ref]: https://dsomm.timo-pagel.de/ "OWASP DevSecOps Maturity Model"]
 - Build
 - Deployment
@@ -74,7 +76,10 @@
 - Dynamic depth for infrastructure
 -  Stored Secrets
 
-## **Security DevOps Maturity Model (SDOMM)** [id]: https://christian-schneider.net/slides/OWASP-AppSecEU-2015_SecDevOps.pdf "SDOMM"
+## **Security DevOps Maturity Model (SDOMM)**
+
+[id]: https://christian-schneider.net/slides/OWASP-AppSecEU-2015_SecDevOps.pdf "SDOMM"
+
 
 [id]: https://files.speakerdeck.com/presentations/34433ef819d54786b5687b3e7f2bf481/201507_HackPra_Security_DevOps.pdf "SDOMM"
 
@@ -99,6 +104,6 @@
 |Axes| Level 1| Level 2| Level 3| Level 4|
 |--------------|---------------|-------------|-----------|------------|
 |Dynamic Depth|Scanning of public attack surface| Scanning of authenticated parts through UI layer |Separate scanning of different application layers / backends| argeted scanning of individual forms / wizards (UI) and service layers|
-|Static Depth| Axis "Static Depth": Level 1Assurance that no third-party code with known vulnerabilities is used<br/> - check server-site and client site dependencies | Axis "Static Depth": Level 2Scan important parts of source code for vulnerability patterns  | Scan the complete applications’ source code for vulnerability patterns  |   Scan code of (important) third-party dependencies used in application  |
+|Static Depth| Assurance that no third-party code with known vulnerabilities is used<br/> - check server-site and client site dependencies | Axis "Static Depth": Level 2Scan important parts of source code for vulnerability patterns  | Scan the complete applications’ source code for vulnerability patterns  |   Scan code of (important) third-party dependencies used in application  |
 |Intensity|- Dynamic checks: Only passive scanning <br/> -Static checks: Just scan the code along with other code metrics     |   Static checks: Just scan the code along with other code metrics  |   Use heavyweight scanning options on important parts of application    |   Axis "Intensity": Level 4Use customised rule sets for dynamic checks    |
 |Consolidation|-Generate human-readable (HTML) reports from tools and link them in Jenkins<br/>-Use simple criteria to "break the build" on heavy findings      |  Custom logic to make build unstable and/or broken depending on<br/> - type of vulnerability<br/>- Confidence level<br/>- Severity ranking  |  Define consolidation goals     | Measure the concrete code coverage of your security testing activities        |
