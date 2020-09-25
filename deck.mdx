@@ -1,7 +1,6 @@
 import { Split } from 'mdx-deck';
 import { themes } from 'mdx-deck';
 export const theme = themes.yellow;
-import tmm  from './TMM.png';
 
 # DevSecOps
 ### University Internship Program under SRE Chapter
@@ -93,8 +92,14 @@ In order to achieve level 4, we should include:
 ---
 ## **Recommendation**
 
-
-
+-  Visualize logfile in real time (e.g. Kibana, SolarWind)
+- Check that there are no missing paths in the application with coverage-tools (e.g. Cobertura)
+- Implement Smoke testing by Automation
+  - *This can verify whether the major functionalities still operates properly.
+If the test fails, then they can correct the build and redeploy the build immediately.*
+- Use Anchore to analyze the container image and vulnerabilities
+- Use Kubesec to perform deployment check
+    - *check whether proper security policies take place*
 
 ---
 
