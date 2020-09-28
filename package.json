@@ -24,6 +24,7 @@
   },
   "homepage": "https://github.com/fazreil/presentation-on-heroku#readme",
   "dependencies": {
+    "@mdx-deck/themes": "^4.1.0",
     "mdx-deck": "^4.1.1",
     "nomnoml": "^0.8.0"
   }
