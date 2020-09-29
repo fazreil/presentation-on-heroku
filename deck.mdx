@@ -46,15 +46,15 @@ export const theme = themes.yellow;
 
 | SAST | DAST|
 |-------------------|------------------|
-|White box security testing <br/>- Tester has access the underlying framework <br/>- Application tested from inside out <br/>- testing represent developer approach| Black box security testing<br/>- Tester has no knowledge of the framework or technologies <br/>-tested from outside in <br/>-testing represent hacker approach|
+|White box security testing <br/>-access the underlying framework <br/>- Application tested from inside out <br/>- testing represent developer approach| Black box security testing<br/>-no knowledge of the framework or technologies <br/>-tested from outside in <br/>-testing represent hacker approach|
 
 ---
 
 |SAST |DAST|
 |-------------------|------------------------------|
-| Requires source code  -analyze source code or binary without executing the applications| Requires a running application -  analyze by executing the applications |
+| Requires source code| Requires a running application  |
 |Find vulnerabilities earlier in SDLC |Find vulnerabilities toward the end of SDLC|
-|Less expensive to solve the vulnerabilities- problem can be solve before code enter to QA cycle| More expensive to solve the vulnerabilities -problem may be fixed as emergency release|
+|Less expensive | More expensive to solve the vulnerabilities |
 |can't discover run-time and environment-related issues scans static code| Can discover run-time and environment-related issues -using dynamic analysis|
 |Support all kinds of software | Typically scan only application like web services and web application|
 
@@ -100,6 +100,11 @@ If the test fails, then they can correct the build and redeploy the build immedi
 - Use Anchore to analyze the container image and vulnerabilities
 - Use Kubesec to perform deployment check
     - *check whether proper security policies take place*
+---
+
+## **Roadmap Timeline**
+
+![Timeline](https://github.com/lizp99/presentation-on-heroku/raw/Methodology-of-assessment/timeline.PNG)
 
 ---
 
