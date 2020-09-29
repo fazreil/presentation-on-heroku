@@ -1,19 +1,110 @@
 import { Split } from 'mdx-deck';
-//import { themes } from 'mdx-deck';
-//export const theme = themes.future;
+import { themes } from 'mdx-deck';
+export const theme = themes.yellow;
 
 # DevSecOps
 ### University Internship Program under SRE Chapter
 
 ---
 
+# Methodology to access infrastructure
+---
+
+# **Hardening**
+
+- a collection of tools and techniques to reduce vulnerability in the infrastructure or the systems unlike test maturity model is emphasizing on the automation process
+- provides different protection layers
+  - host level
+  - application level
+  - operating system level
+  - user level to physical level
+
+---
+
 # Methodology
 
-- Risk Assessment
- 
-- Test Maturity Model
+**Methodology to assess software development tool security are such as below:**
+- **NIST framework**
+- **NICE framework**
+- **SAST vs DAST**
 
-- Hardening
+---
+
+## NIST framework
+
+![NIST framework](https://www.nist.gov/sites/default/files/styles/960_x_960_limit/public/images/2019/04/18/cyber-diagram-steps.png?itok=dI-k78Gp)
+
+---
+
+## NICE framework
+
+![NICE framework](https://schoolofcybersecurity.com/wp-content/uploads/2018/04/Framework_courses-4.png)
+
+---
+
+## SAST vs DAST
+
+| SAST | DAST|
+|-------------------|------------------|
+|White box security testing <br/>:white_flower:access the underlying framework <br/>:white_flower:application tested from inside out <br/>:white_flower:testing represent developer approach| Black box security testing<br/>:white_flower:no knowledge of the framework or technologies <br/>:white_flower:tested from outside in <br/>:white_flower:testing represent hacker approach|
+
+---
+
+|SAST |DAST|
+|-------------------|------------------------------|
+|:heavy_check_mark: Requires source code|:heavy_check_mark: Requires a running application  |
+|:heavy_check_mark:Find vulnerabilities earlier in SDLC |:heavy_check_mark:Find vulnerabilities toward the end of SDLC|
+|:heavy_check_mark:Less expensive | :heavy_check_mark:More expensive to solve the vulnerabilities |
+|:heavy_check_mark:can't discover run-time and environment-related issues by scanning static code|:heavy_check_mark: Can discover run-time and environment-related issues by using dynamic analysis|
+|:heavy_check_mark:Support all kinds of software |:heavy_check_mark: Typically scan only application like web services and web application|
+
+
+---
+## OWASP DevSecOps Maturity model
+
+- a guidelines to enable the organizations which progress in DevOps journey, to have a faster release cycles and digital innovation demands a strong pitch.
+
+---
+# DevSecOps Maturity Model Assessment
+
+![DSOMM](https://github.com/lizp99/presentation-on-heroku/raw/Methodology-of-assessment/Devsecops.jpg)
+
+---
+
+In order to achieve level 4, we should include:
+
+- security SME
+- Mutual testing
+- Threat modeling
+- Building and testing of artifacts in virtual environment
+- Handover of confidential parameters
+- Usage of a short maximum lifetime for images
+- Visualization of logging
+- Two factor authentication
+- Chaos monkey
+- Visualization of metrics
+- Coverage of service to service communication
+- Smoke testing
+- Load test
+- Check for malware
+- Test cluster deployment resources
+
+---
+## **Recommendation**
+
+-  Visualize logfile in real time (e.g. Kibana, SolarWind)
+- Check that there are no missing paths in the application with coverage-tools (e.g. Cobertura)
+- Implement Smoke testing by Automation
+  - *This can verify whether the major functionalities still operates properly.
+If the test fails, then they can correct the build and redeploy the build immediately.*
+- Use Anchore to analyze the container image and vulnerabilities
+- Use Kubesec to perform deployment check
+    - *check whether proper security policies take place*
+---
+
+## **Roadmap Timeline**
+
+![Timeline](https://github.com/lizp99/presentation-on-heroku/raw/Methodology-of-assessment/timeline.PNG)
 
 ---
 
