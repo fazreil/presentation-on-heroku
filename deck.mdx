@@ -4,6 +4,8 @@ export const theme = themes.yellow;
 import Orgchart from './component/nomnom';
 import Chart from "./component/canvasjs";
 import MaturityChart from "./component/maturity-model";
+import Roadmapchart from "./component/roadmap";
+
 
 # DevSecOps
 ### University Internship Program under SRE Chapter
@@ -70,7 +72,24 @@ import MaturityChart from "./component/maturity-model";
 ---
 # DevSecOps Maturity Model Assessment
 
-![DSOMM](https://github.com/lizp99/presentation-on-heroku/raw/Methodology-of-assessment/Devsecops.jpg)
+<MaturityChart
+  org="RHB Digital"
+  build="2"
+  deployment="3"
+  patchManagement="2"
+  educationAndGuidance="1"
+  cultureAndOrganization="1"
+  process="3"
+  monitoring="3"
+  logging="1"
+  infrastructureHardening="2"
+  dynamicDepthForApplication="2"
+  staticDepthForApplication="4"
+  consolidation="4"
+  applicationTests="2"
+  dynamicDepthForInfrastructure="1"
+  staticDepthForInfrastructure="1" />
+
 
 ---
 
@@ -107,9 +126,12 @@ If the test fails, then they can correct the build and redeploy the build immedi
 
 ## **Roadmap Timeline**
 
-![Timeline](https://github.com/lizp99/presentation-on-heroku/raw/Methodology-of-assessment/timeline.PNG)
+<Roadmapchart />
 
 ---
+
+-----
+
 
 # Q&A
 :question:
@@ -122,28 +144,6 @@ If the test fails, then they can correct the build and redeploy the build immedi
 ---
 
 # Appendix
-
----
-
-### CanvasJS
-
-<MaturityChart
-  org="RHB Digital"
-  build="2"
-  deployment="3"
-  patchManagement="2"
-  educationAndGuidance="1"
-  cultureAndOrganization="1"
-  process="3"
-  monitoring="3"
-  logging="1"
-  infrastructureHardening="2"
-  dynamicDepthForApplication="2"
-  staticDepthForApplication="4"
-  consolidation="4"
-  applicationTests="2"
-  dynamicDepthForInfrastructure="1"
-  staticDepthForInfrastructure="1" />
 
 ---
 
