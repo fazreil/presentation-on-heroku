@@ -9,7 +9,7 @@ class MaturityChart extends Component {
 			animationEnabled: true,
       margin: -100,
 			exportEnabled: true,
-      width: 1800,
+      width: 1550,
       height: 500,
 			title: {
 				text: "Devops Maturity Level in "+this.props.org,
