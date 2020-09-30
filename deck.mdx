@@ -4,9 +4,9 @@ import { Split } from 'mdx-deck';
 
 # Apache Maven
 
-- Apache Maven is a comprehension and project management software tool.
-- Based on a project object model (POM) framework Maven is able to handle the create, report and documentation of a project from an information center.
-- We can create and manage any Java-based project through maven.
+- a comprehension and project management software tool.
+- create, report and documentation of a project based on POM
+- any Java-based project can be create and manage through maven.
 
 ---
 
@@ -16,14 +16,11 @@ import { Split } from 'mdx-deck';
 
 # Maven Features
 
-|**Features**|**Description**|
-|--|--|
-|Easier build process||
-|Quality project information||
-|Transparent migration to new features||
-|Best practices development guideline||
-|Uniform build system||
-todo: description to be filled by Aaron
+- Easier build process
+- Quality project information
+- Transparent migration to new features
+- Best practices development guideline
+- Uniform build system
 
 ---
 
@@ -42,9 +39,8 @@ These are the scopes provided by Maven for developers to manage
 
 ---
 
-# Maven Goals
+## Maven Goals
 
-These are maven goals used by Back End Repositories:
 - Clean
 - build
 - Site
@@ -90,13 +86,66 @@ These are maven goals used by Back End Repositories:
 
 ---
 
-# **Maven Typical Build Lifecycle**
-A Typical Build Lifecycle is a well-defined sequence of phases which define the order in which the goals are to be executed. A typical Maven Build Lifecycle is as table below:
+# **Maven Build Lifecycle**
+
+There are 3 built-in build lifecycle
+- Default
+- Clean
+- Site
 
 ---
 
-![Maven Build Lifecycle](https://www.studytonight.com/maven/images/site-lifecycle.jpg)
+## **Maven Default Lifecycle**
+
+![Maven Build Lifecycle](https://www.codetab.org/tutorial/apache-maven/media/mvn-plugins-package-goals.png)
 
 ---
 
+## **Maven Clean Lifecycle**
 
+- Clean the files and directories generated during build Process
+
+![Maven Clean Lifecycle](https://www.studytonight.com/maven/images/build-lifecycle-clean-phase.jpg)
+
+
+---
+
+## **Maven Site Lifecycle**
+
+- purposely designed for documentation
+- useful for create reports, deploy site, and etc.
+
+![Maven Site Lifecycle](https://cdn.educba.com/academy/wp-content/uploads/2020/03/Maven-Life-Cycle-4.png)
+
+---
+
+## **Maven Plugin**
+
+All Maven tasks are done through plugins and it's used for:
+
+- create jar file
+- create war file
+- compile code files
+- unit testing of code
+- create project documentation
+- create project reports
+
+---
+
+## **Documentation for BackEnd Code**
+
+By using Maven Site lifecycle, we can generate documentation for all BackEnd Codes
+
+- Provide information on each Repositories
+- Provide information on Dependencies
+- Automate all site generation with the help of aggregator
+
+---
+
+## **Plugins for documentation**
+
+- project info report
+- maven site
+- javadoc
+
+---
