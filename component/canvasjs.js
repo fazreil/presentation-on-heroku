@@ -36,11 +36,11 @@ class Chart extends Component {
 		}
 
     return (
-      <div>
+      <div style={{position: 'relative', left: '-20%', bgcolor: 'yellow'}}>
         <h1>{this.props.y}</h1>
         <h1>{y1}</h1>
         <CanvasJSChart options = {options}/>
-        <h1>the Chart goes there</h1>
+        <h1></h1>
       </div>
     );
   }
