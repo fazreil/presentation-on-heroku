@@ -96,20 +96,20 @@ There are 3 built-in build lifecycle
 
 ---
 
-|Phasen & its Description|	
-|--|	
-|**Prepare-resources** -Resource copying can be customized in this phase|	
-|**Validate** -Validates if the project is correct and if all necessary information is available.|	
-|**Compile** -Validates if the project is correct and if all necessary information is available.|	
+||Phasen & its Description|	
+|--|--|	
+|**Prepare-resources**| -Resource copying can be customized in this phase|	
+|**Validate**| -Validates if the project is correct and if all necessary information is available.|	
+|**Compile**| -Validates if the project is correct and if all necessary information is available.|	
 
 ---
 
-|Phasen & its Description|	
-|--|	
-|**Test** -Tests the compiled source code suitable for testing framework.|	
-|**Package** -This phase creates the JAR/WAR package as mentioned in the packaging in POM.xml.|
-|**Install** -This phase installs the package in local/remote maven repository.|	
-|**Deploy** -Copies the final package to the remote repository.|	
+||Phasen & its Description|	
+|--|--|
+|**Test**| -Tests the compiled source code suitable for testing framework.|	
+|**Package**| -This phase creates the JAR/WAR package as mentioned in the packaging in POM.xml.|
+|**Install**| -This phase installs the package in local/remote maven repository.|	
+|**Deploy**| -Copies the final package to the remote repository.|	
 
 ---
 
@@ -119,44 +119,44 @@ There are 3 built-in build lifecycle
 
 ---
 
-|Lifecycle Phase & Description|	
-|--|
-|**Validate** - Validates whether project is correct and all necessary information is available to complete the build process.|	
-|**Initialize** - Initializes build state, for example set properties.|	
-|**Generate-Sources** - Generate any source code to be included in compilation phase.|	
-|**Process-Sources** - Process the source code, for example, filter any value.|	
-|**Generate-Resources** - Generate resources to be included in the package.|	
+||Lifecycle Phase & Description|	
+|--|--|
+|**Validate**| - Validates whether project is correct and all necessary information is available to complete the build process.|	
+|**Initialize**| - Initializes build state, for example set properties.|	
+|**Generate-Sources**| - Generate any source code to be included in compilation phase.|	
+|**Process-Sources**| - Process the source code, for example, filter any value.|	
+|**Generate-Resources**| - Generate resources to be included in the package.|	
 
 ---
 
-|Lifecycle Phase & Description|	
-|--|
-|**Process-Resources** - Copy and process the resources into the destination directory, ready for packaging phase.|	
-|**Compile** - Compile the source code of the project.|	
-|**Process-Classes** - Post-process the generated files from compilation, for example to do bytecode enhancement/optimization on Java classes.|	
-|**Generate-Test-Sources** - Generate any test source code to be included in compilation phase.|	
-|**Process-Test-Sources** - Process the test source code, for example, filter any values.|	
+||Lifecycle Phase & Description|	
+|--|--|
+|**Process-Resources**| - Copy and process the resources into the destination directory, ready for packaging phase.|	
+|**Compile**| - Compile the source code of the project.|	
+|**Process-Classes**| - Post-process the generated files from compilation, for example to do bytecode enhancement/optimization on Java classes.|	
+|**Generate-Test-Sources**| - Generate any test source code to be included in compilation phase.|	
+|**Process-Test-Sources**| - Process the test source code, for example, filter any values.|	
 
 ---
 
-|Lifecycle Phase & Description|	
-|--|	
-|**Test-Compile** - Compile the test source code into the test destination directory.|	
-|**Process-Test-Classes** - Process the generated files from test code file compilation.|	
-|**Test** - Run tests using a suitable unit testing framework (Junit is one).|	
-|**Prepare-Package** - Perform any operations necessary to prepare a package before the actual packaging.|	
-|**Package** - Take the compiled code and package it in its distributable format, such as a JAR, WAR, or EAR file.|	
+||Lifecycle Phase & Description|	
+|--|--|
+|**Test-Compile**| - Compile the test source code into the test destination directory.|	
+|**Process-Test-Classes**| - Process the generated files from test code file compilation.|	
+|**Test**| - Run tests using a suitable unit testing framework (Junit is one).|	
+|**Prepare-Package**| - Perform any operations necessary to prepare a package before the actual packaging.|	
+|**Package**| - Take the compiled code and package it in its distributable format, such as a JAR, WAR, or EAR file.|	
 
 ---
 
-|Lifecycle Phase & Description|	
-|--|	
-|**Pre-Integration-Test** - Perform actions required before integration tests are executed. For example, setting up the required environment.|	
-|**Integration-Test** - Process and deploy the package if necessary into an environment where integration tests can be run.|	
-|**Post-Integration-Test** - Perform actions required after integration tests have been executed. For example, cleaning up the environment.|	
-|**Verify** - Run any check-ups to verify the package is valid and meets quality criteria.|	
-|**Install** - Install the package into the local repository, which can be used as a dependency in other projects locally.|	
-|**Deploy** - Copies the final package to the remote repository for sharing with other developers and projects.|
+||Lifecycle Phase & Description|	
+|--|--|
+|**Pre-Integration-Test**| - Perform actions required before integration tests are executed. For example, setting up the required environment.|	
+|**Integration-Test**| - Process and deploy the package if necessary into an environment where integration tests can be run.|	
+|**Post-Integration-Test**| - Perform actions required after integration tests have been executed. For example, cleaning up the environment.|	
+|**Verify**| - Run any check-ups to verify the package is valid and meets quality criteria.|	
+|**Install**| - Install the package into the local repository, which can be used as a dependency in other projects locally.|	
+|**Deploy**| - Copies the final package to the remote repository for sharing with other developers and projects.|
 
 ---
 
