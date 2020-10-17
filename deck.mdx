@@ -127,7 +127,31 @@ There are 3 built-in build lifecycle
 
 ## **Maven Default Lifecycle**
 
-![Maven Build Lifecycle](https://www.codetab.org/tutorial/apache-maven/media/mvn-plugins-package-goals.png)
+<Flowchart src="
+#padding: 3
+#.legend: fill=transparent background=transparent stroke=transparent
+#.phase: fill=#d1d1d1 visual=roundrect
+#.plugin: fill=#5AAAFF visual=roundrect
+[<phase>process resource|[<plugin>resources:resources]]
+[<phase>compile|[<plugin>compiler:compile]]
+[<phase>process-classes]
+[<phase>process-test-resources|[<plugin>resources:testResources]]
+[<phase>test-compile|[<plugin>compiler:testCompile]]
+[<phase>test|[<plugin>surefire:test]]
+[<phase>prepare-package]
+[<phase>package|[<plugin>jar:jar]]
+[process resource]->[compile]
+[compile]->[process-classes]
+[process-classes]->[process-test-resources]
+[process-test-resources]->[test-compile]
+[test-compile]->[test]
+[test]->[prepare-package]
+[prepare-package]->[package]
+[<legend>legend|
+  [<phase>This box denotes a phase]|
+  [<plugin>This box denotes a plugin]
+]"
+/>
 
 ---
 
