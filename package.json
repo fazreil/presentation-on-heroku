@@ -26,8 +26,9 @@
   "homepage": "https://github.com/fazreil/presentation-on-heroku#readme",
   "dependencies": {
     "@mdx-deck/themes": "^4.1.0",
+    "fs": "0.0.1-security",
     "mdx-deck": "^4.1.1",
     "nomnoml": "0.6.1",
-    "fs": "0.0.1-security"
+    "table": "^6.0.3"
   }
 }
