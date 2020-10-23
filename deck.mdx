@@ -1,6 +1,11 @@
 import { Split } from 'mdx-deck';
 import { themes } from 'mdx-deck';
 export const theme = themes.yellow;
+import Orgchart from './component/nomnom';
+import Chart from "./component/canvasjs";
+import MaturityChart from "./component/maturity-model";
+import Roadmapchart from "./component/roadmap";
+
 
 # DevSecOps
 ### University Internship Program under SRE Chapter
@@ -67,7 +72,24 @@ export const theme = themes.yellow;
 ---
 # DevSecOps Maturity Model Assessment
 
-![DSOMM](https://github.com/lizp99/presentation-on-heroku/raw/Methodology-of-assessment/Devsecops.jpg)
+<MaturityChart
+  org="RHB Digital"
+  build="2"
+  deployment="3"
+  patchManagement="2"
+  educationAndGuidance="1"
+  cultureAndOrganization="1"
+  process="3"
+  monitoring="3"
+  logging="1"
+  infrastructureHardening="2"
+  dynamicDepthForApplication="2"
+  staticDepthForApplication="4"
+  consolidation="4"
+  applicationTests="2"
+  dynamicDepthForInfrastructure="1"
+  staticDepthForInfrastructure="1" />
+
 
 ---
 
@@ -104,9 +126,12 @@ If the test fails, then they can correct the build and redeploy the build immedi
 
 ## **Roadmap Timeline**
 
-![Timeline](https://github.com/lizp99/presentation-on-heroku/raw/Methodology-of-assessment/timeline.PNG)
+<Roadmapchart />
 
 ---
+
+-----
+
 
 # Q&A
 :question:
@@ -122,40 +147,26 @@ If the test fails, then they can correct the build and redeploy the build immedi
 
 ---
 
-### Containerization
+# SRE Mafia Anatomy
 
-- Containerization is virtualization technology that abstracts the Operating System from it's architecture.
-- Containerization enable better deployment certainty where the container image will behave identically.
-- With Containerization, rollbacks are achievable by redeploying the previous version of the image.
-
----
-
-### NodeJS
-
-- NodeJS provides a lot of frameworks to be used by developers to create various kind of applications.
-- In this project, each UIP Candidates are required to form presentation using MDX-Deck.
-- MDX-Deck translates markdown into presentations, deployable as Node Server.
-
----
-
-### Maven
-
-- Maven is a tool to manage lifecycle of java projects.
-- By using maven, developers are exposed to various plugins that empower them to develop robust applications.
-
-
----
-
-### Markdown
-
----
-
-### DevOps CICD
-
----
-
-### CanvasJS
-
-<MaturityChart y="12" org="RHB Digital"/>
-
----
+<Orgchart src="
+[Dato Khairussaleh]->[Rohan]
+[Rohan]->[Dev Raaj]
+[Dev Raaj]->[Ir Amir Hamzah]
+[Ir Amir Hamzah]->[Fab]
+[Fab|CI/CD]
+[Hamizah|DevTestOps]
+[Fahmi|Intern]
+[Sre|Intern]
+[Fab]->[Hamizah]
+[Hamizah]->[Fahmi]
+[Hamizah]->[Sre]
+[Fab]->[Nareen|SysOps]
+[Fab]->[Azmy|SysOps]
+[Fab]->[Alif|Cloud Architect]
+[Fab]->[Iqbal|DevTestOps]
+[Fab]->[Aqilah|CI/CD]
+[Fab]->[Liz|Intern]
+[Fab]--[Aaron|Intern]
+[Fab]--[Jescy|Intern]"
+/>
