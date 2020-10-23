@@ -1,7 +1,11 @@
 import { Split } from 'mdx-deck';
 import { themes } from 'mdx-deck';
 export const theme = themes.comic;
+<<<<<<< HEAD
+import Flowchart from './component/flowchart';
+=======
 import Table from './component/table';
+>>>>>>> remotes/aaron98lee/documentation-for-backend-codes
 
 # Apache Maven
 
@@ -55,7 +59,18 @@ These are the scopes provided by Maven for developers to manage
 - Contains information about the project
 - Store configuration details
 
-![Maven POM](https://cdn.educba.com/academy/wp-content/uploads/2020/04/Maven-POM-File-1.2.jpg)
+<Flowchart src="
+#direction: right
+#.box: fill=yellow
+[<box>pom.xml|
+  [Build Life cycle] |
+  [Dependencies] |
+  [Build Plugins] |
+  [Build Profile]
+]
+[Maven]<->[pom.xml]
+[pom.xml]<->[Maven Local Repository]"
+/>
 
 ---
 
@@ -97,6 +112,8 @@ There are 3 built-in build lifecycle
 
 ---
 
+<<<<<<< HEAD
+=======
 #Phases
 <Table data={[
   ['prepare','resource copying can be customized in this phase'],
@@ -105,6 +122,7 @@ There are 3 built-in build lifecycle
 ]}/>
 
 ---
+>>>>>>> remotes/aaron98lee/documentation-for-backend-codes
 ||Phasen & its Description|
 |--|--|
 |**Prepare-resources**| -Resource copying can be customized in this phase|
@@ -124,7 +142,31 @@ There are 3 built-in build lifecycle
 
 ## **Maven Default Lifecycle**
 
-![Maven Build Lifecycle](https://www.codetab.org/tutorial/apache-maven/media/mvn-plugins-package-goals.png)
+<Flowchart src="
+#padding: 3
+#.legend: fill=transparent background=transparent stroke=transparent
+#.phase: fill=#d1d1d1 visual=roundrect
+#.plugin: fill=#5AAAFF visual=roundrect
+[<phase>process resource|[<plugin>resources:resources]]
+[<phase>compile|[<plugin>compiler:compile]]
+[<phase>process-classes]
+[<phase>process-test-resources|[<plugin>resources:testResources]]
+[<phase>test-compile|[<plugin>compiler:testCompile]]
+[<phase>test|[<plugin>surefire:test]]
+[<phase>prepare-package]
+[<phase>package|[<plugin>jar:jar]]
+[process resource]->[compile]
+[compile]->[process-classes]
+[process-classes]->[process-test-resources]
+[process-test-resources]->[test-compile]
+[test-compile]->[test]
+[test]->[prepare-package]
+[prepare-package]->[package]
+[<legend>legend|
+  [<phase>This box denotes a phase]|
+  [<plugin>This box denotes a plugin]
+]"
+/>
 
 ---
 
