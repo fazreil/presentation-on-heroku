@@ -11,7 +11,7 @@ class MaturityChart extends Component {
 			animationEnabled: true,
       margin: -100,
 			exportEnabled: true,
-      width: 1800,
+      width: 1020,
       height: 500,
 			title: {
 				text: "Devops Maturity Level in "+this.props.org,
@@ -45,7 +45,7 @@ class MaturityChart extends Component {
 		}
 
     return (
-      <div style={{position: 'relative', left: '-50%'}}>
+      <div style={{position: 'relative', left: '-50%',}}>
         <CanvasJSChart options = {options}/>
       </div>
     );
