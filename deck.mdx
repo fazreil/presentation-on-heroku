@@ -30,6 +30,87 @@ a quick intro to Maven
 
 ---
 
+# Apache Maven
+
+|||
+|--|--|
+|:beginner: A comprehension and project management software tool.||
+|:beginner: Perform create, report and documentation of a project based on POM.||
+|:beginner:	Any Java-based project can be create and manage through maven.||
+
+---
+
+# Maven Features
+
+|||
+|--|--|
+|:one: Easier build process||
+|:two:	Quality project information||
+|:three:	Transparent migration to new features||
+|:four:	Best practices development guideline||
+|:five:	Uniform build system||
+
+---
+
+# Project Object Model (POM)
+
+|||
+|--|--|
+|:paperclip:	Fundamental unit of work in Maven||
+|:paperclip:	Contains information about the project||
+|:paperclip:	Store configuration details||
+
+<Flowchart src="
+#direction: right
+#.box: fill=yellow
+[<box>pom.xml|
+  [Build Life cycle] |
+  [Dependencies] |
+  [Build Plugins] |
+  [Build Profile]
+]
+[Maven]<->[pom.xml]
+[pom.xml]<->[Maven Local Repository]"
+/>
+
+---
+
+# Multi-Modules Project
+
+|||
+|--|--|
+|:white_medium_square:	Manage a group of submodules||
+|:white_medium_square:	Located at project's root directory||
+|:white_medium_square:	Submodules are regular Maven projects||
+|:white_medium_square:	Submodules can be built separately or with aggregator||
+
+---
+
+# Multi-Modules Project --> Parent
+
+|||
+|--|--|
+|:small_blue_diamond:	a POM which its content can be inherited||
+|:small_blue_diamond:	1 project/child POM can only have 1 Parent||
+|:small_blue_diamond:	child declare parentage in its POM||
+|:small_blue_diamond:	Parent is unaware of child that's inheriting||
+|:small_blue_diamond:	useful when parent POM consist of reusable content for another project||
+
+---
+
+# Multi-Modules Project --> Aggregator
+
+|||
+|--|--|
+|:small_orange_diamond: can sequence build process of many projects||
+|:small_orange_diamond:	specifies all the projects that can be build-managed together||
+|:small_orange_diamond:	child POM unaware of aggregator POM||
+|:small_orange_diamond:	Aggregator POM can have more than 1 child POM||
+|:small_orange_diamond:	no inheritance of any content from aggregator POM||
+|:small_orange_diamond:	useful for modular build & site those projects that should be managed together||
+
+---
+
 ![Cover Page](https://github.com/Aaron98Lee/presentation-on-heroku/blob/documentation-for-backend-codes/Photo-for-npm/Timeline.PNG?raw=true)
 
 ---
@@ -118,7 +199,7 @@ a quick intro to Maven
 
 |||
 |--|--|
-|:open_file_folder:	Purposely designed for documentation||
+|:file_cabinet:	Purposely designed for documentation||
 |:cloud: Useful for create reports, deploy site, and etc.||
 
 ![Site Lifecycle](https://github.com/Aaron98Lee/presentation-on-heroku/blob/documentation-for-backend-codes/Photo-for-npm/Lifecycle/Site-Lifecycle.PNG?raw=true)
