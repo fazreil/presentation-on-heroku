@@ -4,8 +4,6 @@ var CanvasJSChart = CanvasJSReact.CanvasJSChart;
 
 class MaturityChart extends Component {
   render() {
-    const y1 = this.props.y;
-    var y2 = parseInt(y1,10);
     const options = {
 			theme: "light1",
 			animationEnabled: true,
@@ -45,7 +43,7 @@ class MaturityChart extends Component {
 		}
 
     return (
-      <div style={{position: 'relative', left: '-50%'}}>
+      <div style={{position: 'relative', left: '-30%'}}>
         <CanvasJSChart options = {options}/>
       </div>
     );
