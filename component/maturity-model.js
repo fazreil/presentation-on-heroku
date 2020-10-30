@@ -8,6 +8,7 @@ class MaturityChart extends Component {
 			theme: "light1",
 			animationEnabled: true,
       margin: -100,
+      backgroundColor: "#fd0",
 			exportEnabled: true,
       width: 1020,
       height: 500,
