@@ -4,8 +4,6 @@ var CanvasJSChart = CanvasJSReact.CanvasJSChart;
 
 class MaturityChart extends Component {
   render() {
-    const y1 = this.props.y;
-    var y2 = parseInt(y1,10);
     const options = {
 			theme: "light1",
 			animationEnabled: true,
@@ -24,28 +22,28 @@ class MaturityChart extends Component {
 			{
 				type: "column",
 				dataPoints: [
-					{ label: "Build", y: 2},
-					{ label: "Deployment", y: 3},
-					{ label: "Patch Management", y: 2},
-					{ label: "Education and Guidance", y: 1},
-					{ label: "Culture and Organization", y: 1},
-					{ label: "Process", y: 3},
-					{ label: "Monitoring", y: 3},
-					{ label: "Logging", y: 1},
-					{ label: "Infrastructure Hardening", y: 2},
-					{ label: "Dynamic Depth for application", y: 2},
-					{ label: "Static depth for applications", y: 4},
-					{ label: "Consolidatioin", y: 4},
-					{ label: "Application Tests", y: 2},
-					{ label: "Dynamic Depth for infrastructure", y: 1},
-					{ label: "Static Depth for infrastructure", y: 1}
+					{ label: "Build", y: parseInt(this.props.build,10)},
+					{ label: "Deployment", y: parseInt(this.props.deployment,10)},
+					{ label: "Patch Management", y: parseInt(this.props.patchManagement,10)},
+					{ label: "Education and Guidance", y: parseInt(this.props.educationAndGuidance,10)},
+					{ label: "Culture and Organization", y: parseInt(this.props.cultureAndOrganization,10)},
+					{ label: "Process", y: parseInt(this.props.process,10)},
+					{ label: "Monitoring", y: parseInt(this.props.monitoring,10)},
+					{ label: "Logging", y: parseInt(this.props.logging,10)},
+					{ label: "Infrastructure Hardening", y: parseInt(this.props.infrastructureHardening,10)},
+					{ label: "Dynamic Depth for application", y: parseInt(this.props.dynamicDepthForApplication,10)},
+					{ label: "Static depth for applications", y: parseInt(this.props.staticDepthForApplication,10)},
+					{ label: "Consolidatioin", y: parseInt(this.props.consolidation,10)},
+					{ label: "Application Tests", y: parseInt(this.props.applicationTests,10)},
+					{ label: "Dynamic Depth for infrastructure", y: parseInt(this.props.dynamicDepthForInfrastructure,10)},
+					{ label: "Static Depth for infrastructure", y: parseInt(this.props.staticDepthForInfrastructure,10)}
 				]
 			}
 			]
 		}
 
     return (
-      <div style={{position: 'relative', left: '-50%',}}>
+      <div style={{position: 'relative', left: '-30%',}}>
         <CanvasJSChart options = {options}/>
       </div>
     );
