@@ -83,10 +83,15 @@ import Table from './component/table';
 |:white_medium_square:	Located at project's root directory||
 |:white_medium_square:	Submodules are regular Maven projects||
 |:white_medium_square:	Submodules can be built separately or with aggregator||
+|<br/>||
+|<br/>||
 
----
-
-![POM Types](https://github.com/Aaron98Lee/presentation-on-heroku/blob/documentation-for-backend-codes/Photo-for-npm/POM/POM-Types.PNG?raw=true)
+<Flowchart src="
+#direction: down
+#.box: fill=pink
+[<box> Multi-Module POM]-[Parentage POM]
+[<box> Multi-Module POM]-[Aggregation POM]"
+/>
 
 ---
 
@@ -225,8 +230,19 @@ import Table from './component/table';
 |--|--|
 |:file_cabinet:	Purposely designed for documentation||
 |:cloud: Useful for create reports, deploy site, and etc.||
+|<br/>||
+|<br/>||
 
-![Site Lifecycle](https://github.com/Aaron98Lee/presentation-on-heroku/blob/documentation-for-backend-codes/Photo-for-npm/Lifecycle/Site-Lifecycle.PNG?raw=true)
+<Flowchart src="
+#direction: right
+#.box: fill=#FF0000
+#.box1: fill=#FF8C00
+#.box2: fill=#FFD700
+#.box3: fill=#FFFF00
+[<box>Pre-Site]->[<box>Site]
+[<box>Site]->[<box>Post-Site]
+[<box>Post-Site]->[<box>Site-deploy]"
+/>
 
 ---
 
