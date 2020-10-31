@@ -5,7 +5,7 @@ import Orgchart from './component/nomnom';
 import Chart from "./component/canvasjs";
 import MaturityChart from "./component/maturity-model";
 import Roadmapchart from "./component/roadmap";
-import NIST from "./component/nist"
+import NIST from "./component/nist";
 
 
 # DevSecOps
@@ -14,6 +14,7 @@ import NIST from "./component/nist"
 ---
 
 # Methodology to access infrastructure
+
 ---
 
 # **Hardening**
@@ -43,9 +44,16 @@ import NIST from "./component/nist"
 
 ---
 
-## NICE framework
+## NICE Framework
 
-![NICE framework](https://schoolofcybersecurity.com/wp-content/uploads/2018/04/Framework_courses-4.png)
+<Orgchart src="
+[Securely Provision (SP)]-[Operate & Maintain (OP)]
+[Operate & Maintain (OP)]-[Oversee & Govern (OV)]
+[Oversee & Govern (OV)]-[Protect & Defend (PR)]
+[Protect & Defend (PR)]-[Analyze (AN)]
+[Analyze (AN)]-[Collect & Operate (CO)]
+[Collect & Operate (CO)]-[Investigate (IN)]"
+/>
 
 ---
 
@@ -67,11 +75,13 @@ import NIST from "./component/nist"
 
 
 ---
+
 ## OWASP DevSecOps Maturity model
 
 - a guidelines to enable the organizations which progress in DevOps journey, to have a faster release cycles and digital innovation demands a strong pitch.
 
 ---
+
 # DevSecOps Maturity Model Assessment
 
 <MaturityChart
@@ -114,6 +124,7 @@ In order to achieve level 4, we should include:
 - Test cluster deployment resources
 
 ---
+
 ## **Recommendation**
 
 -  Visualize logfile in real time (e.g. Kibana, SolarWind)
@@ -124,6 +135,7 @@ If the test fails, then they can correct the build and redeploy the build immedi
 - Use Anchore to analyze the container image and vulnerabilities
 - Use Kubesec to perform deployment check
     - *check whether proper security policies take place*
+
 ---
 
 ## **Roadmap Timeline**
@@ -132,9 +144,6 @@ If the test fails, then they can correct the build and redeploy the build immedi
 
 ---
 
------
-
-
 # Q&A
 :question:
 
@@ -142,33 +151,3 @@ If the test fails, then they can correct the build and redeploy the build immedi
 
 # Thank You
 :bow:
-
----
-
-# Appendix
-
----
-
-# SRE Mafia Anatomy
-
-<Orgchart src="
-[Dato Khairussaleh]->[Rohan]
-[Rohan]->[Dev Raaj]
-[Dev Raaj]->[Ir Amir Hamzah]
-[Ir Amir Hamzah]->[Fab]
-[Fab|CI/CD]
-[Hamizah|DevTestOps]
-[Fahmi|Intern]
-[Sre|Intern]
-[Fab]->[Hamizah]
-[Hamizah]->[Fahmi]
-[Hamizah]->[Sre]
-[Fab]->[Nareen|SysOps]
-[Fab]->[Azmy|SysOps]
-[Fab]->[Alif|Cloud Architect]
-[Fab]->[Iqbal|DevTestOps]
-[Fab]->[Aqilah|CI/CD]
-[Fab]->[Liz|Intern]
-[Fab]--[Aaron|Intern]
-[Fab]--[Jescy|Intern]"
-/>
