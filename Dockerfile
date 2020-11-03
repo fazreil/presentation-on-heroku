@@ -6,6 +6,7 @@ WORKDIR /opt/presentation/
 
 COPY deck.mdx .
 COPY package.json .
+COPY package-lock.json .
 COPY component/ component/
 
 RUN npm install
