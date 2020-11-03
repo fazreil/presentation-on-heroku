@@ -1,4 +1,4 @@
-FROM node:10-alpine
+FROM node:10
 
 RUN mkdir /opt/presentation/
 
