@@ -9,7 +9,7 @@ COPY package-lock.json .
 COPY package.json .
 COPY component/ component/
 
-RUN npm install
+RUN npm clean-install
 
 EXPOSE $PORT
 
