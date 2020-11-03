@@ -27,6 +27,7 @@
   "dependencies": {
     "mdx-deck": "^4.1.1",
     "nomnoml": "0.6.1",
+    "gatsby": "2.24.47",
     "typescript": "^3.7.0-beta"
   }
 }
