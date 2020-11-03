@@ -26,10 +26,6 @@
   "homepage": "https://github.com/fazreil/presentation-on-heroku#readme",
   "dependencies": {
     "mdx-deck": "^4.1.1",
-    "nomnoml": "0.6.1",
-    "gatsby": "2.14.0",
-    "webpack": "4.43.0",
-    "node-fetch": "2",
-    "typescript": "^3.7.0-beta"
+    "nomnoml": "0.6.1"
   }
 }
