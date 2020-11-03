@@ -28,6 +28,7 @@
     "fs": "0.0.1-security",
     "mdx-deck": "^4.1.1",
     "nomnoml": "0.6.1",
+    "fs": "0.0.1-security",
     "typescript": "^3.7.0-beta"
   }
 }
